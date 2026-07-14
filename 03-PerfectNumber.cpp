@@ -5,9 +5,13 @@ using namespace std;
 
 int ReadNUmber(string message)
 {
-    int n;
-    cout << message<<endl;
-    cin >> n;
+int n;
+    do
+    {
+        cout << message << endl; 
+        cin >> n;           
+    } while (n <= 0);  
+    
     return n;
 }
 bool Isperfectnumber(int n)
@@ -57,6 +61,10 @@ printresult(ReadNUmber("Enter a number to check if it is a perfect number or not
 
  return 0;    
 }
+
+
+
+
 
 
 
